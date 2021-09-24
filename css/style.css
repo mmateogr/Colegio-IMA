@@ -1,0 +1,1015 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #010030;
+  color: white;
+}
+
+/* ------------------------------------INICIO HEADER---------------------------------------- */
+/*Fondos Header---------------------*/
+#headerHome {
+  background-image: url(../imagenes/ima_jardin.png);
+  background-position: 25% 60%;
+  background-size: cover;
+  height: 68vh;
+}
+
+#headerElColegio {
+  background-image: url(../imagenes/back_elcolegio.png);
+  background-position: 25% 60%;
+  background-size: cover;
+  height: 68vh;
+}
+
+#headerActividades {
+  background-image: url(../imagenes/back_actividades.png);
+  background-position: 25% 60%;
+  background-size: cover;
+  height: 68vh;
+}
+
+#headerGaleria {
+  background-image: url(../imagenes/back_galeria.png);
+  background-position: 25% 60%;
+  background-size: cover;
+  height: 68vh;
+}
+
+#headerContacto {
+  background-image: url(../imagenes/back_contacto.png);
+  background-position: bottom;
+  background-size: cover;
+  height: 68vh;
+}
+
+.error {
+  background-image: url(../imagenes/ima_jardin.png);
+  background-size: cover;
+  height: 68vh;
+}
+
+/*Fondos Header----------------------*/
+.encabezadoGeneral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #cdccffc4;
+  height: 12vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 8;
+}
+
+.logoIma {
+  position: relative;
+  height: 70px;
+  top: 9px;
+  left: 100%;
+}
+
+h1 {
+  color: #00006A;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 6.5rem;
+  font-weight: 300;
+  margin-top: 0.7rem;
+  margin-bottom: 0rem;
+  padding-left: 20px;
+}
+
+.icono-menu {
+  position: relative;
+  top: 22px;
+  right: 10%;
+  z-index: 10;
+}
+
+.icono-menu img {
+  vertical-align: top;
+  width: 40px;
+  cursor: pointer;
+}
+
+.cont-menu {
+  background-color: #01003088;
+  -webkit-box-shadow: 2px 0px 5px 2px;
+          box-shadow: 2px 0px 5px 2px;
+  width: 280px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.active {
+  -webkit-transform: translate(-600px);
+          transform: translate(-600px);
+}
+
+.cont-menu ul {
+  padding: 100px 0px 20px 0px;
+  list-style: none;
+}
+
+.cont-menu ul li a {
+  color: white;
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.cont-menu ul li a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* -----------------------------------------FIN HEADER-------------------------------------- */
+h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 4rem;
+  margin: 4rem 0rem 5rem 0rem;
+  padding: 0rem 0rem 4rem 0rem;
+  border-bottom: 0.5rem solid #B9B8FF;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+/*----------------------------INICIO FOOTER------------------------------------------*/
+footer {
+  background-color: #cdccff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  color: #00006A;
+  height: 100%;
+}
+
+footer .footer img {
+  height: 100px;
+}
+
+footer .footer__p a {
+  text-decoration: none;
+}
+
+footer .footer__info, footer .footer__autor {
+  text-align: center;
+  padding-left: 80px;
+}
+
+footer img {
+  height: 100px;
+}
+
+/*----------------------------FINAL FOOTER------------------------------------------*/
+/* -----------------------------------------COMIENZO PÁGINA PPAL-------------------------------------- */
+.inscripcionesDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 0.5rem solid #B9B8FF;
+  height: 100%;
+  width: 100%;
+}
+
+.inscripciones {
+  border-bottom: none;
+  margin-bottom: 0rem;
+}
+
+h2 a {
+  color: #0300FF;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.titulosHome {
+  text-align: center;
+  margin: 5rem;
+  margin-top: 10rem;
+  font-size: 4rem;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.cardsHome {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60vh;
+  z-index: -1;
+}
+
+.containerCards {
+  max-width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0;
+  background: #B9B8FF;
+  border-radius: 15px;
+  -webkit-box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+  box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+}
+
+.face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #00006A;
+}
+
+.face1 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+}
+
+.novedad1Titulo, .novedad2Titulo, .novedad3Titulo {
+  background-color: #00006A;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.cSharp {
+  background-color: #00006A;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.face2 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card:hover .face.face2 {
+  height: 60px;
+}
+
+.card:nth-child(1) .face.face2 {
+  background-image: url(../imagenes/db1.jpg);
+  border-radius: 15px;
+}
+
+.card:nth-child(2) .face.face2 {
+  background-image: url(../imagenes/wall-e1.jpg);
+  border-radius: 15px;
+}
+
+.card:nth-child(3) .face.face2 {
+  background-image: url(../imagenes/hockey1.jpg);
+  border-radius: 15px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+.parrafoDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10rem;
+}
+
+.parrafoHome {
+  text-align: justify;
+  background-color: #B9B8FF;
+  color: #00006A;
+  font-weight: 300;
+  width: 70%;
+  font-size: 2.5rem;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+/*Imagenes redes-----------------------*/
+.imagenesRedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imagenesRedes img {
+  height: 10rem;
+  border-radius: 2rem;
+  background: #010030;
+  -webkit-box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+  box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+}
+
+.imagenesRedes .redesIg {
+  margin: 0rem 30px 10rem 30px;
+}
+
+.imagenesRedes img:hover {
+  background: #040152;
+  -webkit-box-shadow: 8px 8px 16px #000013, -8px -8px 16px #02004d;
+  box-shadow: 8px 8px 16px #000013, -8px -8px 16px #02004d;
+}
+
+/*Imagenes redes-----------------------*/
+/* -----------------------------------------FIN PÁGINA PPAL------------------------------------------- */
+/* -----------------------------------------COMIENZO EL COLEGIO--------------------------------------- */
+.colegioInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.introInfo {
+  width: 75%;
+}
+
+.introInfo h3 {
+  font-size: 3.5rem;
+  margin: 7rem 0rem 3rem 0rem;
+}
+
+.introInfo p {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.contenedorColegio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90vh;
+}
+
+.acordeon {
+  width: 70%;
+  max-width: 120rem;
+  padding: 2rem;
+}
+
+.acordeon .bloque {
+  background-color: #B9B8FF;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.acordeon .h3 {
+  background-color: #040152;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  font-size: 3rem;
+}
+
+.acordeon .contenido {
+  border-radius: 15px;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: justify;
+  color: #00006A;
+  padding: 0rem 3rem;
+  margin: 1.5rem 0rem;
+}
+
+.acordeon .contenido ul {
+  padding-top: 1rem;
+  list-style-position: inside;
+}
+
+.acordeon .bloque.activo .contenido {
+  height: 25rem;
+}
+
+/* -----------------------------------------FIN EL COLEGIO-------------------------------------------- */
+/* -----------------------------------------COMIENZO ACTIVIDADES-------------------------------------- */
+.imatorio, .patioJoven {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.patioJoven {
+  margin-bottom: 8rem;
+}
+
+.imatorio h3, .patioJoven h3 {
+  font-size: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.imatorio p, .patioJoven p {
+  font-size: 2rem;
+}
+
+.imatorioDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  text-align: justify;
+  margin: 8rem 0rem 0rem 0rem;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.patioDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  text-align: justify;
+  margin: 8rem 0rem 0rem 0rem;
+}
+
+/*
+.imgImaDiv, .imgPatioDiv {
+    display: flex;
+    flex-direction: column;
+}
+.imgImaDiv {
+    height: 65rem;
+}
+.imatorio img, .patioJoven img {
+    height: 24rem;
+}
+.protocolo {
+    width: 24rem;
+    position: relative;
+    right: 9rem;
+}
+.animadores {
+    width: 27rem;
+    position: relative;
+    bottom: 9rem;
+    left: 13rem;
+}
+.jugando {
+    position: relative;
+    bottom: 7rem;
+    left: 12rem;
+}
+.hockey {
+    position: relative;
+    bottom: 11rem;
+    left: 3rem;
+}
+.patio {
+    position: relative;
+    bottom: 4rem;
+}
+*/
+.actividades {
+  font-family: 'Reenie Beanie', cursive;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+/* -----------------------------------------FIN ACTIVIDADES------------------------------------------- */
+/*----------------------------INICIO PÁGINA GALERÍA------------------------------------------*/
+.fotosGaleria {
+  padding: 20px 100px;
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+      grid-template-areas: "uno     dos     dos" "tres    tres    tres" "cuatro  cuatro  cinco";
+  -ms-grid-columns: repeat 3, 1fr;
+      grid-template-columns: repeat 3, 1fr;
+  -ms-grid-rows: repeat 3, 1fr;
+      grid-template-rows: repeat 3, 1fr;
+  margin-bottom: 10rem;
+}
+
+.fotosGaleria img {
+  width: 100%;
+}
+
+.fotoUno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: uno;
+}
+
+.fotoDos {
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: dos;
+}
+
+.fotoTres {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: tres;
+}
+
+.fotoCuatro {
+  height: 100%;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: cuatro;
+}
+
+.fotoCinco {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: cinco;
+}
+
+/*---------------------------- FIN PÁGINA GALERÍA------------------------------------------*/
+/*----------------------------INICIO PÁGINA CONTACTO------------------------------------------*/
+.consulta {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/*Formulario contacto------------------*/
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formularioContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+}
+
+form input {
+  width: 300px;
+}
+
+.cajaFormulario {
+  margin: 0.5rem 0rem;
+}
+
+.motivo {
+  margin-bottom: 1rem;
+}
+
+.mensaje textarea {
+  width: 300px;
+}
+
+form label {
+  font-size: 1.5rem;
+}
+
+.botonesContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.botonesContacto input {
+  margin: 2rem 1rem;
+}
+
+/*Formulario contacto------------------*/
+.ubicacion {
+  border: none;
+}
+
+/*Mapa colegio-------------------------*/
+.ubicacionColegio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ubicacionColegio iframe {
+  margin-bottom: 10rem;
+  height: 50rem;
+}
+
+.ubicacion {
+  margin-bottom: 4rem;
+  padding: 0rem;
+}
+
+.aclaracionesUbicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #B9B8FF;
+  height: 50rem;
+  width: 30rem;
+  color: #00006A;
+}
+
+.aclaracionesUbicacion p {
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+/*Mapa colegio-------------------------*/
+/*---------------------------- FIN PÁGINA CONTACTO------------------------------------------*/
+@media (max-width: 1350px) {
+  .encabezadoGeneral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #cdccffc4;
+    height: 12vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .icono-menu {
+    position: relative;
+    top: 22px;
+    z-index: 10;
+    left: 4%;
+  }
+  h1 {
+    color: #00006A;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    height: 10px;
+  }
+  .logoIma {
+    position: relative;
+    height: 60px;
+    top: 9px;
+    left: -76%;
+  }
+}
+
+@media (max-width: 970px) {
+  .cardsHome {
+    height: 135vh;
+  }
+}
+
+@media (max-width: 600px) {
+  /*GENERAL*/
+  .encabezadoGeneral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #cdccffc4;
+    height: 12vh;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .encabezadoGeneral img {
+    left: 3px;
+  }
+  .encabezadoGeneral h1 {
+    margin-top: 14px;
+  }
+  .encabezadoGeneral .icono-menu {
+    position: relative;
+    top: 22px;
+    right: 390px;
+    z-index: 10;
+    top: 18px;
+  }
+  .footer {
+    font-size: 1.2rem;
+  }
+  .footer .footer__img {
+    height: 60px;
+    margin: 5px 0;
+  }
+  .footer .footer__info, .footer .footer__autor {
+    padding-left: 30;
+  }
+  /*FIN GENERAL*/
+  /*HOME*/
+  .cardsHome {
+    height: 100%;
+  }
+  .parrafoHome {
+    font-size: 2rem;
+  }
+  .redes {
+    height: 50vh;
+  }
+  /*FIN HOME*/
+  /*EL COLEGIO*/
+  .contenedorColegio {
+    height: 120vh;
+  }
+  .acordeon .h3 {
+    font-size: 2rem;
+  }
+  .acordeon .contenido {
+    font-size: 1.4rem;
+  }
+  .acordeon .bloque.activo .contenido {
+    height: 35rem;
+  }
+  /*FIN EL COLEGIO*/
+  /*ACTIVIDADES*/
+  .imgImaDiv {
+    display: none;
+  }
+  .imgPatioDiv {
+    display: none;
+  }
+  .imatorio p, .patioJoven p {
+    font-size: 1.4rem;
+  }
+  .imatorioDiv, .patioDiv {
+    width: 70%;
+  }
+  /*FIN ACTIVIDADES*/
+  /*GALERÍA*/
+  .fotosGaleria {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco";
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fotosGaleria img {
+    height: auto;
+  }
+  /*FIN GALERÍA*/
+  /*CONTACTO*/
+  .ubicacionColegio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ubicacionColegio iframe {
+    height: 400px;
+    width: 80%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .ubicacionColegio .aclaracionesUbicacion {
+    margin-top: 0;
+    width: 80%;
+    height: 100%;
+    padding-bottom: 3rem;
+    margin-bottom: 8rem;
+  }
+  /*FIN CONTACTO*/
+}
+
+@media (max-width: 500px) {
+  .encabezadoGeneral {
+    height: 20vh;
+  }
+  .encabezadoGeneral h1 {
+    width: 350px;
+    font-size: 5rem;
+    margin-top: 5px;
+  }
+  .encabezadoGeneral .icono-menu {
+    top: 40px;
+  }
+  .encabezadoGeneral img {
+    top: 29px;
+  }
+  .inscripciones {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 376px) {
+  /*GENERAL*/
+  #headerHome {
+    height: 42vh;
+  }
+  #headerElColegio {
+    height: 42vh;
+  }
+  .encabezadoGeneral {
+    width: 100vw;
+  }
+  .encabezadoGeneral h1 {
+    font-size: 3.9rem;
+    margin-top: 19px;
+  }
+  .encabezadoGeneral .icono-menu {
+    right: 20px;
+    height: 50px;
+  }
+  .encabezadoGeneral .cont-menu {
+    background-color: #010030ce;
+    width: 190px;
+  }
+  .encabezadoGeneral .cont-menu ul li a {
+    font-size: 20px;
+    padding: 15px 20px;
+  }
+  .encabezadoGeneral img {
+    left: -15px;
+  }
+  .footer .footer__info, .footer .footer__autor {
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+  .footer .footer__img {
+    right: -30px;
+  }
+  .footer .footer__p {
+    font-size: 1rem;
+    width: 60px;
+  }
+  /*FIN GENERAL*/
+  /*HOME*/
+  .parrafoHome {
+    font-size: 1.7rem;
+  }
+  .imagenesRedes img {
+    height: 8rem;
+  }
+  .introInfo {
+    width: 90%;
+    margin: 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /*FIN HOME*/
+  /*EL COLEGIO*/
+  .acordeon {
+    width: 85%;
+  }
+  .acordeon .contenido {
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+  }
+  /*FIN EL COLEGIO*/
+  /*ACTIVIDADES*/
+  /*FIN ACTIVIDADES*/
+  /*GALERÍA*/
+  .fotosGaleria {
+    padding: 5px 40px;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco";
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fotosGaleria img {
+    height: auto;
+  }
+  /*FIN GALERÍA*/
+  /*CONTACTO*/
+  /*FIN CONTACTO*/
+}
+/*# sourceMappingURL=style.css.map */

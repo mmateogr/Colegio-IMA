@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #010030;
+    color: white;
+}
+
+/* ------------------------------------INICIO HEADER---------------------------------------- */
+/*Fondos Header---------------------*/
+#headerHome {
+    background-image: url(../imagenes/ima_jardin.png);
+    background-position: 25% 60%;
+    background-size: cover;
+    height: 68vh;
+}
+
+#headerElColegio {
+    background-image: url(../imagenes/back_elcolegio.png);
+    background-position: 25% 60%;
+    background-size: cover;
+    height: 68vh;
+}
+
+#headerActividades {
+    background-image: url(../imagenes/back_actividades.png);
+    background-position: 25% 60%;
+    background-size: cover;
+    height: 68vh;
+}
+
+#headerGaleria {
+    background-image: url(../imagenes/back_galeria.png);
+    background-position: 25% 60%;
+    background-size: cover;
+    height: 68vh;
+}
+
+#headerContacto {
+    background-image: url(../imagenes/back_contacto.png);
+    background-position: bottom;
+    background-size: cover;
+    height: 68vh;
+}
+/*Fondos Header----------------------*/
+
+
+.encabezadoGeneral {
+    display: flex;
+    background-color: #cdccffc4;
+    height: 12vh;
+    justify-content: space-evenly;
+    position: absolute;
+    position: sticky;
+    top: 0;
+}
+
+.logoIma{
+    position: relative;
+    height: 70px;
+    top: 9px;
+    left: 80px;
+}
+
+h1 {
+    color: #00006A;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 6.5rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+.icono-menu {
+    position: relative;
+    top: 22px;
+    right: 150px;
+    z-index: 10;
+}
+
+.icono-menu img {
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+}
+
+.cont-menu {
+    background-color: #01003088;
+    box-shadow: 2px 0px 5px 2px;
+    width: 280px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+.active {
+    transform: translate(-600px);
+}
+
+.cont-menu ul {
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li a {
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ul li a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+
+
+
+/*
+
+
+header nav ul {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 0.25rem;
+}
+
+header nav  ul li{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0rem 2rem;
+}
+
+header ul li a:hover {
+    background-color: #8b8686d0;
+    padding: 0.8rem 2rem;
+}
+*/
+/*SUBMENÚ-----------------------------------*/
+
+.submenu {
+    position: absolute;
+    display: none;
+    text-align: left;
+}
+
+.submenu li {
+    background-color: #c4c4c4d0;
+    padding: 0;
+    width: 100% ;
+}
+.submenu li:hover {
+    background-color: #c4c4c4d0;
+}
+
+.submenu li a {
+    display: block;
+    padding: 0.8rem 2rem;
+}
+
+ul li:hover .submenu {
+    display: block;
+    position: absolute;
+}
+
+/*FIN SUBMENÚ-------------------------------*/
+/* -----------------------------------------FIN HEADER-------------------------------------- */
+/* -----------------------------------------COMIENZO PÁGINA PPAL-------------------------------------- */
+h2 a {
+    color: #0300FF;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+h2 a:hover {
+    background-color: #c4c4c4d0;
+    font-size: 4.5rem;                                                                                              /*Sacar o acomodar*/
+}
+.carrouselNovedades {
+    display: flex;
+    justify-content: center;
+}
+.carrouselNovedades img {
+    height: 35rem;
+}
+.cardNovedades {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.card {
+    background-color: #8b8686d0;
+    margin: 2rem 3rem;
+}
+.parrafoHome {
+    text-align: justify;
+    background-color: #8b8686d0;
+    margin: 15rem 30rem;
+    font-size: 2.5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.novedadesFoto {margin: 0rem 2rem}
+.novedadesFoto p {font-size: 1.6rem;}
+.titulosHome {
+    text-align: center;
+    margin: 5rem;
+    margin-top: 15rem;
+    font-size: 4rem;
+}
+/*Imagenes redes-----------------------*/
+.redes {
+    height: 39vh;
+    
+}
+.imagenesRedes {
+    display: flex;
+    justify-content: center;
+}
+.imagenesRedes img {
+    height: 10rem;
+    margin: 0rem 4rem 10rem 4rem;
+    border-radius: 2rem;
+}
+.imagenesRedes img:hover {
+    background-color:#E1E0FF;
+}
+/*Imagenes redes-----------------------*/
+/* -----------------------------------------FIN PÁGINA PPAL------------------------------------------- */
+/* -----------------------------------------COMIENZO EL COLEGIO--------------------------------------- */
+.introInfo {
+    margin: 7rem 20rem;
+}
+.introInfo h3 {
+    font-size: 3.5rem;
+    margin: 15rem 0rem 3rem 0rem;
+}
+.introInfo p {
+    font-size: 2rem;
+    text-align: justify;
+}
+.contenidoColegio {height: 230vh;}
+.contenidoColegio h4 {font-size: 3rem; padding-left: 2rem; padding-top: 1rem;}
+.contenidoColegio p, .contenidoColegio ul {font-size: 2rem; list-style-position: inside; text-align: justify; padding: 1rem 2rem 0rem 2rem;}
+
+.inicial {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.inicialDiv {
+    width: 50rem;
+}
+.inicial img {height: 51rem;}
+
+.primario {display: flex; justify-content: center; margin-bottom: 4rem;}
+.primarioDiv {width: 50rem;}
+.primario img {width: 48rem; margin-left: 3rem;}
+
+.secundario {display: flex; justify-content: center; margin: 2rem 0rem;}
+.secundarioDiv {width: 50rem;}
+.secundario img {height: 53rem;}
+/* -----------------------------------------FIN EL COLEGIO-------------------------------------------- */
+/* -----------------------------------------COMIENZO ACTIVIDADES-------------------------------------- */
+.imatorio, .patioJoven {display: flex; justify-content: center;}
+.patioJoven {margin-bottom: 8rem;}
+.imatorio h3, .patioJoven h3 {font-size: 4rem; justify-content: center; padding-bottom: 2rem;}
+.imatorio p, .patioJoven p {font-size: 2rem;}
+
+.imatorioDiv {width: 40rem; text-align: justify; margin: 0rem 5rem 0rem 0rem; transition: all 2s;}
+.patioDiv {width: 40rem; text-align: justify; margin: 0rem 0rem 0rem 5rem;}
+
+.imgImaDiv, .imgPatioDiv {display: flex; flex-direction: column;}
+.imgImaDiv {height: 65rem;}
+.imatorio img, .patioJoven img {height: 24rem;}
+.protocolo {width: 24rem; position: relative; right: 9rem; transform: rotate(345deg);}                /*Sacar rotate o acomodarlo bien*/
+.animadores {width: 27rem; position: relative; bottom: 9rem; left: 13rem; transform: skewX(20deg);}                       /*Sacar Skew*/
+.jugando {position: relative; bottom: 7rem; left: 12rem;}
+.hockey {position: relative; bottom: 11rem; left: 3rem;}
+.patio {position: relative; bottom: 4rem;}
+
+.imatorioDiv:hover {
+    background-color: #8b8686d0;                                                                                  /*sacar o acomodar*/
+}
+
+
+/* -----------------------------------------FIN ACTIVIDADES------------------------------------------- */
+
+h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 4rem;
+    margin: 4rem 0rem 5rem 0rem;
+    padding: 0rem 0rem 4rem 0rem;
+    border-bottom: 0.5rem solid #B9B8FF;
+}
+
+.ubicacion {border: none;}
+.consulta {font-size: 2.5rem; text-align: center; margin-bottom: 2rem;}
+
+
+
+h3 {
+    font-weight: 300;
+}
+
+
+
+.novedades img {
+    width: 50hw;
+    display: inline;
+}
+
+#parrafoHome {
+    text-align: center;
+}
+.actividades {
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+
+/*----------------------------INICIO PÁGINA GALERÍA------------------------------------------*/
+.fotosGaleria {
+    padding: 20px 100px;
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-areas: "uno     dos     dos"
+                         "tres    tres    tres"
+                         "cuatro  cuatro  cinco";
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+                     
+    margin-bottom: 10rem;
+}
+.fotosGaleria img { width: 100%;}
+.fotoUno {
+    grid-area: uno;
+}
+.fotoDos {
+    height: 100%;
+    grid-area: dos;
+}
+.fotoTres {
+    grid-area: tres;
+}
+.fotoCuatro {
+    height: 100%;
+    grid-area: cuatro;
+}
+.fotoCinco {
+    grid-area: cinco;
+}
+
+
+/*---------------------------- FIN PÁGINA GALERÍA------------------------------------------*/
+/*----------------------------INICIO PÁGINA CONTACTO------------------------------------------*/
+/*Formulario contacto------------------*/
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+.formularioContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+form input {
+    width: 300px;
+}
+.cajaFormulario {
+    margin: 0.5rem 0rem;
+}
+.motivo {margin-bottom: 1rem}
+.mensaje textarea {
+    width: 300px;
+}
+form label {
+    font-size: 1.5rem;
+}
+.botonesContacto {
+    display: flex;
+    width: 90px;
+    justify-content: center;
+}
+.botonesContacto input {
+    
+    margin: 2rem 1rem;
+}
+/*Formulario contacto------------------*/
+/*Mapa colegio-------------------------*/
+.ubicacionColegio {
+    display: flex;
+    justify-content: center;
+}
+.ubicacionColegio iframe {
+    margin-bottom: 10rem;
+    height: 50rem;
+}
+.ubicacion {
+    margin-bottom: 4rem;
+    padding: 0rem;
+}
+.aclaracionesUbicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #8b8686d0;
+    height: 50rem;
+    width: 30rem;
+}
+.aclaracionesUbicacion p {
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+/*Mapa colegio-------------------------*/
+/*---------------------------- FIN PÁGINA CONTACTO------------------------------------------*/
+/*----------------------------INICIO FOOTER------------------------------------------*/
+footer {
+    background-image: linear-gradient(to bottom, #a8a8a8, #bbbcbe, #cdd2d2, #e2e7e5, #fafcf6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #00006A;
+}
+footer img {
+    height: 100px;
+}
+
+/*----------------------------FINAL FOOTER------------------------------------------*/
+@media (max-width: 1350px) {
+    .encabezadoGeneral {
+        display: flex;
+        background-color: #cdccffc4;
+        height: 12vh;
+        justify-content: space-evenly;
+        position: absolute;
+        position: sticky;
+        top: 0;
+    }
+
+    .icono-menu {
+        position: relative;
+        top: 22px;
+        right: 0px;
+        z-index: 10;
+    }
+
+    h1 {
+        color: #00006A;
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 4rem;
+        font-weight: 300;
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        text-align: center;
+    }
+
+    .logoIma{
+        position: relative;
+        height: 70px;
+        top: 9px;
+        left: 0px;
+    }
+
+}
+@media (max-width: 600px) {
+    .encabezadoGeneral {
+        display: flex;
+        background-color: #cdccffc4;
+        height: 12vh;
+        justify-content: space-evenly;
+        position: absolute;
+        position: sticky;
+        top: 0;
+    }
+
+    .icono-menu {
+        position: relative;
+        top: 22px;
+        right: 390px;
+        z-index: 10;
+    }
+
+    .fotosGaleria {
+        display: grid;
+        grid-template-areas: "uno"
+                             "dos"
+                             "tres"
+                             "cuatro"
+                             "cinco";
+        grid-template-rows: repeat(5, auto);
+        justify-content: center;
+    }
+    .fotosGaleria img {
+        height: auto;
+    }
+}
+@media (max-width: 320px) {
+    .fotosGaleria {
+        padding: 5px 40px;
+        display: grid;
+        grid-template-areas: "uno"
+                             "dos"
+                             "tres"
+                             "cuatro"
+                             "cinco";
+        grid-template-rows: repeat(5, auto);
+        justify-content: center;
+    }
+    .fotosGaleria img {
+        height: auto;
+    }  
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <meta name="description" content="Contactanos para resolver tus consultas y saber más del colegio.">
+    <meta name="keywords" content="CONTACTO, CONSULTA, INSCRIPCIÓN, UBICACIÓN, MAPA">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="encabezadoGeneral">
+        <div class="icono-menu">
+            <img src="../imagenes/open-menu.png" id="icono-menu" alt="">
+        </div>
+        <nav class="cont-menu active" id="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="el_colegio.html">El colegio</a>
+                </li>
+                <li>
+                    <a href="actividades.html">Actividades</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galería</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Instituto María Auxiliadora</h1>
+        <a class="linkLogo" href="../index.html"><img class="logoIma" src="../imagenes/logo.png" alt="logo IMA"></a>
+    </header>
+
+    <div id="headerContacto"></div>
+
+    <h2>CONTACTO</h2>
+    <p class="consulta">Envianos tu consulta, nos contactaremos a la brevedad</p>
+    <section class="formulario">
+        <form class="formularioContacto">
+            <div class="cajaFormulario">
+                <label for="nombre">Nombre:</label>
+                <input required type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+            </div>
+            <div class="cajaFormulario">
+                <label for="apellido">Apellido:</label>
+                <input required type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido">
+            </div>
+            <div class="cajaFormulario">
+                <label for="email">Email:</label>
+                <input required type="email" name="email" id="email" placeholder="Escribe tu email">
+            </div>
+            <div class="cajaFormulario">
+                <label for="telefono">Teléfono:</label>
+                <input required type="number" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+            </div>
+            <div class="motivo">
+                <label for="motivo">Motivo:</label>
+                <select required name="motivo" id="motivo">
+                    <option selected disabled value="default">Seleccione</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="inscripción">Inscripción</option>
+                    <option value="reunion">Reunión</option>
+                </select>
+            </div>
+            <div class="mensaje">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="150"
+                placeholder="Escriba aquí"></textarea>
+            </div>
+            <div class="botonesContacto">
+                <input type="reset" value="Limpiar">
+                <input type="submit">
+            </div>
+        </form>
+    </section>
+    <h2 class="ubicacion">UBICACIÓN</h2>
+    <section class="ubicacionColegio">
+        
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20732.368053046546!2d-58.51905050471183!3d-34.482502792440684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb034e3686711%3A0x90d8a704d11c1840!2sInstituto%20Mar%C3%ADa%20Auxiliadora!5e0!3m2!1ses!2sar!4v1629658777583!5m2!1ses!2sar"
+            style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+        <div class="aclaracionesUbicacion">
+            <p>Dirección: Martín y Omar 287 - San isidro.</p>
+            <p>Entre las calles Acasusso y Rivadavia.</p>
+            <p>A 2 cuadras de la estación de San Isidro y 3 cuadras de la Avenida Centenario.</p>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <img class="footer__img" src="../imagenes/logo.png" alt="logo ima">
+        <div class="footer__div">
+            <p class="footer__info">
+            Martín y Omar 287 - San Isidro <br>
+            Tel. [+54] 011-4743-0129
+            <p>
+            <p class="footer__autor">Sitio desarrollado por mmateogr<p>
+        </div>
+        <p class="footer__p">¡Seguinos en <strong> <a href="https://www.instagram.com/imasanisidro/">Instagram</a></strong> !</p>
+    </footer>
+    <script src="../javasc/app.js"></script>
+
+</body>
+
+</html>

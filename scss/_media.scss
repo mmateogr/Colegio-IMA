@@ -1,0 +1,249 @@
+@media (max-width: 1350px) {
+    .encabezadoGeneral {
+        display: flex;
+        background-color: #cdccffc4;
+        height: 12vh;
+        justify-content: space-between;
+        position: absolute;
+        position: sticky;
+        top: 0;
+    }
+
+    .icono-menu {
+        position: relative;
+        top: 22px;
+        z-index: 10;
+        left: 4%;
+    }
+
+    h1 {
+        color: #00006A;
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 4rem;
+        font-weight: 300;
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        text-align: center;
+        height: 10px;
+    }
+
+    .logoIma{
+        position: relative;
+        height: 60px;
+        top: 9px;
+        left: -76%;
+    }
+}
+
+@media (max-width: 970px) {
+    .cardsHome {
+        height: 135vh;
+    }
+}
+
+@media (max-width: 600px) {
+    /*GENERAL*/
+    .encabezadoGeneral {
+        display: flex;
+        background-color: #cdccffc4;
+        height: 12vh;
+        justify-content: space-evenly;
+        position: absolute;
+        position: sticky;
+        top: 0;
+            img {left: 3px;}
+            h1 {margin-top: 14px;}
+            .icono-menu {
+                position: relative;
+                top: 22px;
+                right: 390px;
+                z-index: 10;
+                top: 18px;
+            }
+    }
+    .footer {
+        font-size: 1.2rem;
+            .footer__img {
+                height: 60px;
+                margin: 5px 0;
+            }
+            .footer__info, .footer__autor {
+                padding-left: 30;
+            }
+    }
+    /*FIN GENERAL*/
+    /*HOME*/
+    .cardsHome {
+        height: 100%;
+    }
+
+    .parrafoHome {font-size: 2rem;}
+
+    .redes {
+        height: 50vh;
+
+    }
+    /*FIN HOME*/
+    /*EL COLEGIO*/
+    .contenedorColegio {
+        height: 120vh;
+    }
+    .acordeon .h3 {
+        font-size: 2rem;
+    }
+    .acordeon .contenido {
+        font-size: 1.4rem;
+    }
+    .acordeon .bloque.activo .contenido{
+        height: 35rem;
+    }
+    /*FIN EL COLEGIO*/
+    /*ACTIVIDADES*/
+    .imgImaDiv {
+        display: none;
+    }
+    .imgPatioDiv {
+        display: none;
+    }
+    .imatorio p, .patioJoven p {
+        font-size: 1.4rem;
+    }
+    .imatorioDiv, .patioDiv {
+        width: 70%;
+    }
+    /*FIN ACTIVIDADES*/
+
+    /*GALERÍA*/
+    .fotosGaleria {
+        display: grid;
+        grid-template-areas: "uno"
+                             "dos"
+                             "tres"
+                             "cuatro"
+                             "cinco";
+        grid-template-rows: repeat(5, auto);
+        justify-content: center;
+    }
+    .fotosGaleria img {
+        height: auto;
+    }
+    /*FIN GALERÍA*/
+    /*CONTACTO*/
+    .ubicacionColegio {
+        flex-direction: column;
+        align-items: center;
+            iframe {
+                height: 400px;
+                width: 80%;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            .aclaracionesUbicacion{
+                margin-top: 0;
+                width: 80%;
+                height: 100%;
+                padding-bottom: 3rem;
+                margin-bottom: 8rem;
+            }
+    }
+    /*FIN CONTACTO*/
+}
+@media (max-width: 500px){
+    .encabezadoGeneral {
+        height: 20vh;
+            h1{width: 350px; font-size: 5rem; margin-top: 5px;}
+            .icono-menu {top: 40px;}
+            img {top: 29px;}
+    }
+    .inscripciones {width: 90%; text-align: center;}
+}
+
+@media (max-width: 376px) {
+    /*GENERAL*/
+    #headerHome {height: 42vh;}
+    #headerElColegio {height: 42vh;}
+
+    .encabezadoGeneral{
+        width: 100vw;
+            h1 {font-size: 3.9rem; margin-top: 19px;}
+            .icono-menu {right: 20px; height: 50px;}
+            .cont-menu{
+                background-color: #010030ce;
+                width: 190px;
+                ul{
+                    li{
+                        a {
+                            font-size: 20px;
+                            padding: 15px 20px;
+                        }
+                    }
+                }
+            }
+            img {left: -15px;}
+    }
+    .footer {
+        .footer__info, .footer__autor {
+            font-size: 1rem;
+            padding-left: 10px;
+        }
+        .footer__img {
+            right: -30px;
+        }
+        .footer__p {
+            font-size: 1rem;
+            width: 60px;
+        }
+    }
+    /*FIN GENERAL*/
+    /*HOME*/
+    .parrafoHome {font-size: 1.7rem;}
+    .imagenesRedes{
+        img{
+            height: 8rem;
+        }
+    }
+    
+
+    .introInfo {
+        width: 90%;
+        margin: 0 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    /*FIN HOME*/
+
+    /*EL COLEGIO*/
+    .acordeon {
+        width: 85%;
+            .contenido {
+                padding: 0 0.5rem;
+                font-size: 1.2rem;
+            }
+    }
+
+    /*FIN EL COLEGIO*/
+    /*ACTIVIDADES*/
+    /*FIN ACTIVIDADES*/
+
+    /*GALERÍA*/
+    .fotosGaleria {
+        padding: 5px 40px;
+        display: grid;
+        grid-template-areas: "uno"
+                             "dos"
+                             "tres"
+                             "cuatro"
+                             "cinco";
+        grid-template-rows: repeat(5, auto);
+        justify-content: center;
+    }
+    .fotosGaleria img {
+        height: auto;
+    }
+    /*FIN GALERÍA*/
+
+    /*CONTACTO*/
+    /*FIN CONTACTO*/
+}
+

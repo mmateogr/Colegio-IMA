@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #010030;
+    color: white;
+}
+
+/* ------------------------------------INICIO HEADER---------------------------------------- */
+/*Fondos Header---------------------*/
+#headerHome {
+    background-image: url(../imagenes/ima_jardin.png);
+    background-position: 25% 60%;
+    background-size: cover;
+    height: 68vh;
+}
+
+#headerElColegio {
+    background-image: url(../imagenes/back_elcolegio.png);
+    background-position: 25% 60%;
+    background-size: cover;
+    height: 68vh;
+}
+
+#headerActividades {
+    background-image: url(../imagenes/back_actividades.png);
+    background-position: 25% 60%;
+    background-size: cover;
+    height: 68vh;
+}
+
+#headerGaleria {
+    background-image: url(../imagenes/back_galeria.png);
+    background-position: 25% 60%;
+    background-size: cover;
+    height: 68vh;
+}
+
+#headerContacto {
+    background-image: url(../imagenes/back_contacto.png);
+    background-position: bottom;
+    background-size: cover;
+    height: 68vh;
+}
+.error {
+    background-image: url(../imagenes/ima_jardin.png);
+    background-size: cover;
+    height: 68vh;
+}
+/*Fondos Header----------------------*/
+
+
+.encabezadoGeneral {
+    display: flex;
+    background-color: #cdccffc4;
+    height: 12vh;
+    justify-content: space-evenly;
+    position: absolute;
+    position: sticky;
+    top: 0;
+    z-index: 8;
+}
+
+.logoIma{
+    position: relative;
+    height: 70px;
+    top: 9px;
+    left: 100%;
+}
+
+h1 {
+    color: #00006A;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 6.5rem;
+    font-weight: 300;
+    margin-top: 0.7rem;
+    margin-bottom: 0rem;
+    padding-left: 20px;
+}
+
+.icono-menu {
+    position: relative;
+    top: 22px;
+    right: 10%;
+    z-index: 10;
+}
+
+.icono-menu img {
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+}
+
+.cont-menu {
+    background-color: #01003088;
+    box-shadow: 2px 0px 5px 2px;
+    width: 280px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+.active {
+    transform: translate(-600px);
+}
+
+.cont-menu ul {
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li a {
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ul li a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+/* -----------------------------------------FIN HEADER-------------------------------------- */
+h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 4rem;
+    margin: 4rem 0rem 5rem 0rem;
+    padding: 0rem 0rem 4rem 0rem;
+    border-bottom: 0.5rem solid #B9B8FF;
+}
+
+h3 {
+    font-weight: 300;
+}
+/*----------------------------INICIO FOOTER------------------------------------------*/
+footer {
+    background-color: #cdccff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #00006A;
+    height: 100%;
+        .footer img {
+            height: 100px;
+        }
+        .footer__p a {
+            text-decoration: none;
+        }
+        .footer__info, .footer__autor {
+            text-align: center;
+            padding-left: 80px;
+        }
+}
+footer img {
+    height: 100px;
+} 
+
+/*----------------------------FINAL FOOTER------------------------------------------*/
