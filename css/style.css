@@ -87,6 +87,10 @@ body {
   left: 100%;
 }
 
+.tituloSitio {
+  text-decoration: none;
+}
+
 h1 {
   color: #00006A;
   font-family: 'Reenie Beanie', cursive;
@@ -389,21 +393,28 @@ h2 a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10rem;
   margin-bottom: 5rem;
 }
 
-.introInfo {
-  width: 75%;
+.colegioInfo .introInfo {
+  width: 70%;
+  background-color: #B9B8FF;
+  border-radius: 2rem;
+  color: #00006A;
 }
 
-.introInfo h3 {
+.colegioInfo .introInfo h3 {
   font-size: 3.5rem;
-  margin: 7rem 0rem 3rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 2rem;
+  font-weight: bold;
 }
 
-.introInfo p {
-  font-size: 2rem;
+.colegioInfo .introInfo .parrafoColegio {
+  font-size: 2.5rem;
   text-align: justify;
+  padding: 0rem 2rem 2rem 2rem;
 }
 
 .contenedorColegio {
@@ -932,9 +943,10 @@ form label {
   .encabezadoGeneral h1 {
     font-size: 3.9rem;
     margin-top: 19px;
+    padding-left: 0px;
   }
   .encabezadoGeneral .icono-menu {
-    right: 20px;
+    left: 40px;
     height: 50px;
   }
   .encabezadoGeneral .cont-menu {
@@ -946,7 +958,11 @@ form label {
     padding: 15px 20px;
   }
   .encabezadoGeneral img {
-    left: -15px;
+    left: -40px;
+  }
+  .encabezadoGeneral .tituloSitio {
+    text-decoration: none;
+    padding-left: 0px;
   }
   .footer .footer__info, .footer .footer__autor {
     font-size: 1rem;
@@ -967,8 +983,10 @@ form label {
   .imagenesRedes img {
     height: 8rem;
   }
-  .introInfo {
-    width: 90%;
+  /*FIN HOME*/
+  /*EL COLEGIO*/
+  .colegioInfo .introInfo {
+    width: 70%;
     margin: 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -981,8 +999,12 @@ form label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  /*FIN HOME*/
-  /*EL COLEGIO*/
+  .colegioInfo .introInfo h3 {
+    font-size: 2rem;
+  }
+  .colegioInfo .introInfo .parrafoColegio {
+    font-size: 1.7rem;
+  }
   .acordeon {
     width: 85%;
   }
