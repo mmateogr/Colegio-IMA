@@ -926,13 +926,13 @@ form label {
 
 @media (max-width: 460px) {
   .encabezadoGeneral {
-    height: 6vh;
+    height: 8vh;
   }
   .tituloSitio {
-    height: 2.7rem;
+    height: 2.9rem;
   }
   h1 {
-    font-size: 2.1rem;
+    font-size: 2.25rem;
     padding-right: 10px;
   }
   .icono-menu img {
