@@ -142,7 +142,7 @@ h1 {
 }
 
 .cont-menu {
-  background-color: #01003088;
+  background-color: #0100309c;
   -webkit-box-shadow: 2px 0px 5px 2px;
           box-shadow: 2px 0px 5px 2px;
   width: 280px;
@@ -451,7 +451,7 @@ h2 a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .acordeon {
@@ -785,6 +785,9 @@ form label {
   .linkLogo {
     height: 50px;
   }
+  .tituloSitio {
+    height: 5rem;
+  }
   h1 {
     font-size: 4rem;
   }
@@ -810,6 +813,21 @@ form label {
 
 @media (max-width: 600px) {
   /*GENERAL*/
+  #headerHome {
+    height: 54vh;
+  }
+  #headerElColegio {
+    height: 54vh;
+  }
+  #headerActividades {
+    height: 54vh;
+  }
+  #headerGaleria {
+    height: 54vh;
+  }
+  #headerContacto {
+    height: 54vh;
+  }
   .tituloSitio {
     height: 3.8rem;
   }
@@ -906,7 +924,7 @@ form label {
 
 @media (max-width: 500px) {
   .encabezadoGeneral {
-    height: 8vh;
+    height: 10vh;
   }
   .tituloSitio {
     height: 3.5rem;
@@ -918,6 +936,13 @@ form label {
   .icono-menu img {
     width: 30px;
   }
+  .cont-menu {
+    background-color: #010030c9;
+    width: 190px;
+  }
+  .cont-menu ul li a {
+    padding: 10px 20px;
+  }
   .inscripciones {
     width: 90%;
     text-align: center;
@@ -926,7 +951,7 @@ form label {
 
 @media (max-width: 460px) {
   .encabezadoGeneral {
-    height: 8vh;
+    height: 10vh;
   }
   .tituloSitio {
     height: 2.9rem;
@@ -937,6 +962,25 @@ form label {
   }
   .icono-menu img {
     width: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  #headerHome {
+    height: 35vh;
+  }
+  #headerElColegio {
+    height: 35vh;
+  }
+  #headerActividades {
+    height: 35vh;
+  }
+  #headerGaleria {
+    height: 35vh;
+  }
+  #headerContacto {
+    height: 35vh;
+    background-position: 65%;
   }
 }
 
@@ -956,6 +1000,14 @@ form label {
   }
   #headerContacto {
     height: 42vh;
+  }
+  .cont-menu {
+    background-color: #010030c9;
+    width: 170px;
+  }
+  .cont-menu ul li a {
+    padding: 10px 20px;
+    font-size: 20px;
   }
   .footer .footer__info, .footer .footer__autor {
     font-size: 1rem;
