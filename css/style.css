@@ -906,7 +906,7 @@ form label {
 
 @media (max-width: 500px) {
   .encabezadoGeneral {
-    height: 6vh;
+    height: 8vh;
   }
   .tituloSitio {
     height: 3.5rem;
