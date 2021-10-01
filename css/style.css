@@ -234,6 +234,12 @@ footer .footer__info, footer .footer__autor {
   width: 25rem;
 }
 
+footer .footer__autor a {
+  -webkit-text-decoration: underline #00006A;
+          text-decoration: underline #00006A;
+  color: #00006A;
+}
+
 footer .divLogoFooter {
   display: -webkit-box;
   display: -ms-flexbox;
