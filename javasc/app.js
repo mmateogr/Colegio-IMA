@@ -23,10 +23,10 @@ iconoMenu.addEventListener('click', (e) => {
 })
 
 const bloque    = document.querySelectorAll('.bloque')
-const h3        = document.querySelectorAll('.h3')
+const tituloAcordeon        = document.querySelectorAll('.tituloAcordeon')
 
-h3.forEach(  (  cadaH3 , i )=>{
-    h3[i].addEventListener('click', ()=>{
+tituloAcordeon.forEach(  (  cadaH3 , i )=>{
+    tituloAcordeon[i].addEventListener('click', ()=>{
         
         bloque.forEach( ( cadaBloque , i )=>{
             bloque[i].classList.remove('activo')

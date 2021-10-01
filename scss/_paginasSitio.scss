@@ -177,11 +177,13 @@ h2 a {
     display: flex;
     justify-content: center;
     height: 100vh;
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 .acordeon {
     width: 70%;
     max-width: 120rem;
-    padding: 2rem;
 }
 .acordeon .bloque{
     background-color: #B9B8FF;
@@ -189,13 +191,20 @@ h2 a {
     padding: 1rem;
     border-radius: 15px;
 }
-.acordeon .h3{
+.tituloAcordeon {
     background-color: #040152;
     margin: 0 0 1rem;
     padding: 1rem;
     border-radius: 15px;
     font-size: 3rem;
-
+    display: flex;
+    justify-content: space-between;
+}
+.acordeon .h4{
+    width: 100%;
+}
+.mas {
+    margin-right: 10px;
 }
 .acordeon .contenido{
     border-radius: 15px;
