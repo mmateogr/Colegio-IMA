@@ -74,7 +74,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /**/
   position: absolute;
   position: -webkit-sticky;
   position: sticky;
@@ -89,18 +88,13 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  /**/
   -ms-flex-item-align: center;
       align-self: center;
-  /**/
   margin-right: 2%;
-  /**/
 }
 
 .linkLogo {
-  /**/
   height: 70px;
-  /**/
 }
 
 .logoIma {
@@ -198,8 +192,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -209,19 +204,47 @@ footer {
 }
 
 footer .footer img {
-  height: 100px;
+  height: 10rem;
+}
+
+footer .seguinosFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 16%;
+}
+
+footer .footer__p {
+  width: 8.4rem;
 }
 
 footer .footer__p a {
   text-decoration: none;
 }
 
-footer .footer__info, footer .footer__autor {
-  text-align: center;
-  padding-left: 80px;
+footer .footer__div {
+  margin: 0px 27%;
 }
 
-footer img {
+footer .footer__info, footer .footer__autor {
+  text-align: center;
+  width: 25rem;
+}
+
+footer .divLogoFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 16%;
+}
+
+.footer img {
   height: 100px;
 }
 
@@ -770,6 +793,12 @@ form label {
 
 /*Mapa colegio-------------------------*/
 /*---------------------------- FIN PÁGINA CONTACTO------------------------------------------*/
+@media (max-width: 1075px) {
+  .footer .footer__div {
+    margin: 0px 20%;
+  }
+}
+
 @media (max-width: 970px) {
   .encabezadoGeneral {
     height: 10vh;
@@ -796,6 +825,12 @@ form label {
   }
 }
 
+@media (max-width: 800px) {
+  .footer .footer__div {
+    margin: 0px 15%;
+  }
+}
+
 @media (max-width: 750px) {
   .logoIma {
     height: 30px;
@@ -808,6 +843,12 @@ form label {
   }
   h1 {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 665px) {
+  .footer .footer__div {
+    margin: 0px 10%;
   }
 }
 
@@ -830,16 +871,6 @@ form label {
   }
   .tituloSitio {
     height: 3.8rem;
-  }
-  .footer {
-    font-size: 1.2rem;
-  }
-  .footer .footer__img {
-    height: 60px;
-    margin: 5px 0;
-  }
-  .footer .footer__info, .footer .footer__autor {
-    padding-left: 30;
   }
   /*FIN GENERAL*/
   /*HOME*/
@@ -922,6 +953,12 @@ form label {
   /*FIN CONTACTO*/
 }
 
+@media (max-width: 571px) {
+  .footer .footer__div {
+    margin: 0px 5%;
+  }
+}
+
 @media (max-width: 500px) {
   .encabezadoGeneral {
     height: 10vh;
@@ -946,6 +983,15 @@ form label {
   .inscripciones {
     width: 90%;
     text-align: center;
+  }
+  .footer {
+    font-size: 1.3rem;
+  }
+  .footer .footer__div {
+    margin: 0px 0%;
+  }
+  .footer img {
+    height: 70px;
   }
 }
 
@@ -982,6 +1028,19 @@ form label {
     height: 35vh;
     background-position: 65%;
   }
+  .footer {
+    font-size: 1.2rem;
+  }
+  .footer .footer__div {
+    margin: 0px 0%;
+  }
+  .footer .footer__div .footer__info, .footer .footer__div .footer__autor {
+    text-align: center;
+    width: 22rem;
+  }
+  .footer img {
+    height: 60px;
+  }
 }
 
 @media (max-width: 376px) {
@@ -1008,17 +1067,6 @@ form label {
   .cont-menu ul li a {
     padding: 10px 20px;
     font-size: 20px;
-  }
-  .footer .footer__info, .footer .footer__autor {
-    font-size: 1rem;
-    padding-left: 10px;
-  }
-  .footer .footer__img {
-    right: -30px;
-  }
-  .footer .footer__p {
-    font-size: 1rem;
-    width: 60px;
   }
   /*FIN GENERAL*/
   /*HOME*/
