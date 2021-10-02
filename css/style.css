@@ -866,11 +866,20 @@ form label {
   h1 {
     font-size: 3rem;
   }
+  .card:active .face.face2 {
+    height: 60px;
+  }
 }
 
 @media (max-width: 665px) {
   .footer .footer__div {
     margin: 0px 10%;
+  }
+}
+
+@media (max-width: 635px) {
+  .cardsHome {
+    height: 100%;
   }
 }
 
