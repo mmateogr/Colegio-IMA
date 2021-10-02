@@ -866,7 +866,7 @@ form label {
   h1 {
     font-size: 3rem;
   }
-  .card:active .face.face2 {
+  .card:focus .face.face2 {
     height: 60px;
   }
 }
