@@ -351,11 +351,12 @@ h2 a {
 }
 
 .novedad1Titulo, .novedad2Titulo, .novedad3Titulo {
+  font-size: 3rem;
   background-color: #00006A;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
-  padding: 0;
+  padding: 0 0 1rem 0;
   text-align: left;
 }
 
@@ -389,6 +390,10 @@ h2 a {
   border-radius: 15px;
 }
 
+.cardsResponsive {
+  display: none;
+}
+
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 .parrafoDiv {
   display: -webkit-box;
@@ -405,7 +410,7 @@ h2 a {
   background-color: #B9B8FF;
   color: #00006A;
   font-weight: 300;
-  width: 70%;
+  width: 80%;
   font-size: 2.5rem;
   padding: 2rem;
   border-radius: 2rem;
@@ -866,8 +871,74 @@ form label {
   h1 {
     font-size: 3rem;
   }
-  .card:active .face.face2 {
-    height: 60px;
+  .cardsHome {
+    display: none;
+  }
+  .cardsResponsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cardsResponsive article {
+    width: 80%;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .cardsResponsive article .mobileCard {
+    width: 100%;
+    height: 100%;
+    background-color: #B9B8FF;
+    border-radius: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cardsResponsive article .mobileCard .imgMobile1 {
+    background-image: url(../imagenes/db1.jpg);
+    background-position: 50%;
+    border-radius: 2rem 0 0 2rem;
+    height: 100%;
+    width: 45%;
+  }
+  .cardsResponsive article .mobileCard .imgMobile2 {
+    background-image: url(../imagenes/wall-e1.jpg);
+    background-position: 50%;
+    border-radius: 2rem 0 0 2rem;
+    height: 100%;
+    width: 45%;
+  }
+  .cardsResponsive article .mobileCard .imgMobile3 {
+    background-image: url(../imagenes/hockey1.jpg);
+    background-position: 0;
+    border-radius: 2rem 0 0 2rem;
+    height: 100%;
+    width: 45%;
+  }
+  .cardsResponsive article .mobileCard .textoCardsMobile {
+    width: 55%;
+  }
+  .cardsResponsive article .mobileCard .textoCardsMobile h4 {
+    font-size: 3rem;
+    color: #00006A;
+    margin: 2rem 2rem 1rem 2rem;
+  }
+  .cardsResponsive article .mobileCard .textoCardsMobile p {
+    font-size: 2rem;
+    color: #00006A;
+    margin: 2rem 2rem 1rem 2rem;
   }
 }
 
@@ -990,6 +1061,19 @@ form label {
   }
 }
 
+@media (max-width: 540px) {
+  .cardsResponsive .mobileCard .textoCardsMobile h4 {
+    font-size: 2.5rem;
+    color: #00006A;
+    margin: 2rem 2rem 1rem 2rem;
+  }
+  .cardsResponsive .mobileCard .textoCardsMobile p {
+    font-size: 1.8rem;
+    color: #00006A;
+    margin: 2rem 2rem 1rem 2rem;
+  }
+}
+
 @media (max-width: 500px) {
   .encabezadoGeneral {
     height: 10vh;
@@ -1024,6 +1108,22 @@ form label {
   .footer img {
     height: 70px;
   }
+  .cardsResponsive article {
+    height: 300px;
+  }
+  .cardsResponsive article .mobileCard .imgMobile1, .cardsResponsive article .mobileCard .imgMobile2, .cardsResponsive article .mobileCard .imgMobile3 {
+    background-size: 220px 300px;
+  }
+  .cardsResponsive article .mobileCard .textoCardsMobile h4 {
+    font-size: 2.2rem;
+    color: #00006A;
+    margin: 2rem 2rem 1rem 2rem;
+  }
+  .cardsResponsive article .mobileCard .textoCardsMobile p {
+    font-size: 1.5rem;
+    color: #00006A;
+    margin: 2rem 2rem 1rem 2rem;
+  }
 }
 
 @media (max-width: 460px) {
@@ -1039,6 +1139,25 @@ form label {
   }
   .icono-menu img {
     width: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .cardsResponsive article {
+    height: 250px;
+  }
+  .cardsResponsive article .mobileCard .imgMobile1, .cardsResponsive article .mobileCard .imgMobile2, .cardsResponsive article .mobileCard .imgMobile3 {
+    background-size: 180px 250px;
+  }
+  .cardsResponsive article .mobileCard .textoCardsMobile h4 {
+    font-size: 2rem;
+    color: #00006A;
+    margin: 1rem 1.3rem 1rem 1.3rem;
+  }
+  .cardsResponsive article .mobileCard .textoCardsMobile p {
+    font-size: 1.3rem;
+    color: #00006A;
+    margin: 1rem 1.3rem 1rem 1.3rem;
   }
 }
 
