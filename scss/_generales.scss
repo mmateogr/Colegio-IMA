@@ -184,13 +184,9 @@ footer {
         .footer__div {
             margin: 0px 27%;
         }
-        .footer__info, .footer__autor {
+        .footer__info {
             text-align: center;
             width: 25rem;
-        }
-        .footer__autor a {
-            text-decoration: underline #00006A;
-            color: #00006A;
         }
         .divLogoFooter {
             display: flex;
@@ -198,6 +194,18 @@ footer {
             width: 16%;
         }
 }
+
+.footer__autor {
+    text-align: center;
+    background-color: #a3a1ff;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    color: #010030;
+        .footer__autor a {
+            text-decoration: underline #00006A;
+        }
+}
+
 .footer img {
     height: 100px;
 } 

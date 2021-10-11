@@ -229,15 +229,9 @@ footer .footer__div {
   margin: 0px 27%;
 }
 
-footer .footer__info, footer .footer__autor {
+footer .footer__info {
   text-align: center;
   width: 25rem;
-}
-
-footer .footer__autor a {
-  -webkit-text-decoration: underline #00006A;
-          text-decoration: underline #00006A;
-  color: #00006A;
 }
 
 footer .divLogoFooter {
@@ -248,6 +242,19 @@ footer .divLogoFooter {
       -ms-flex-pack: center;
           justify-content: center;
   width: 16%;
+}
+
+.footer__autor {
+  text-align: center;
+  background-color: #a3a1ff;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  color: #010030;
+}
+
+.footer__autor .footer__autor a {
+  -webkit-text-decoration: underline #00006A;
+          text-decoration: underline #00006A;
 }
 
 .footer img {
