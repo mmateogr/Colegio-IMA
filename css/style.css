@@ -417,7 +417,7 @@ h2 a {
   background-color: #B9B8FF;
   color: #00006A;
   font-weight: 300;
-  width: 80%;
+  width: 90%;
   font-size: 2.5rem;
   padding: 2rem;
   border-radius: 2rem;
@@ -466,7 +466,7 @@ h2 a {
 }
 
 .colegioInfo .introInfo {
-  width: 70%;
+  width: 80%;
   background-color: #B9B8FF;
   border-radius: 2rem;
   color: #00006A;
@@ -492,14 +492,13 @@ h2 a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
   width: 100%;
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
 
 .acordeon {
-  width: 70%;
+  width: 80%;
   max-width: 120rem;
 }
 
@@ -894,7 +893,7 @@ form label {
             align-items: center;
   }
   .cardsResponsive article {
-    width: 80%;
+    width: 90%;
     height: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -994,8 +993,11 @@ form label {
   }
   /*FIN HOME*/
   /*EL COLEGIO*/
-  .contenedorColegio {
-    height: 120vh;
+  .colegioInfo .introInfo h3 {
+    font-size: 2.5rem;
+  }
+  .colegioInfo .introInfo .parrafoColegio {
+    font-size: 2rem;
   }
   .acordeon .h3 {
     font-size: 2rem;
@@ -1127,9 +1129,9 @@ form label {
     margin: 2rem 2rem 1rem 2rem;
   }
   .cardsResponsive article .mobileCard .textoCardsMobile p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #00006A;
-    margin: 2rem 2rem 1rem 2rem;
+    margin: 0rem 2rem 1rem 2rem;
   }
 }
 
@@ -1159,12 +1161,12 @@ form label {
   .cardsResponsive article .mobileCard .textoCardsMobile h4 {
     font-size: 2rem;
     color: #00006A;
-    margin: 1rem 1.3rem 1rem 1.3rem;
+    margin: 0.5rem 1.3rem 0.5rem 1.3rem;
   }
   .cardsResponsive article .mobileCard .textoCardsMobile p {
-    font-size: 1.42rem;
+    font-size: 1.6rem;
     color: #00006A;
-    margin: 1rem 1.3rem 1rem 1.3rem;
+    margin: 0rem 1.3rem 1rem 1.3rem;
   }
 }
 
@@ -1236,7 +1238,7 @@ form label {
   /*FIN HOME*/
   /*EL COLEGIO*/
   .colegioInfo .introInfo {
-    width: 70%;
+    width: 90%;
     margin: 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1256,7 +1258,7 @@ form label {
     font-size: 1.7rem;
   }
   .acordeon {
-    width: 85%;
+    width: 90%;
   }
   .acordeon .contenido {
     padding: 0 0.5rem;
