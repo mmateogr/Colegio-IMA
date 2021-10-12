@@ -826,7 +826,27 @@ form label {
 
 /*Mapa colegio-------------------------*/
 /*---------------------------- FIN PÁGINA CONTACTO------------------------------------------*/
+@media (max-width: 1120px) {
+  .acordeon .contenido {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+  }
+  .acordeon .bloque.activo .contenido {
+    height: 35rem;
+  }
+}
+
 @media (max-width: 1075px) {
+  .acordeon {
+    width: 90%;
+  }
+  .acordeon .contenido {
+    font-size: 1.7rem;
+    padding: 0 0.5rem;
+  }
+  .acordeon .bloque.activo .contenido {
+    height: 35rem;
+  }
   .footer .footer__div {
     margin: 0px 20%;
   }
@@ -1003,7 +1023,8 @@ form label {
     font-size: 2rem;
   }
   .acordeon .contenido {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    padding: 0 0.5rem;
   }
   .acordeon .bloque.activo .contenido {
     height: 35rem;
@@ -1108,6 +1129,13 @@ form label {
     width: 90%;
     text-align: center;
   }
+  .acordeon {
+    width: 90%;
+  }
+  .acordeon .contenido {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+  }
   .footer {
     font-size: 1.3rem;
   }
@@ -1187,6 +1215,13 @@ form label {
     height: 35vh;
     background-position: 65%;
   }
+  .acordeon {
+    width: 90%;
+  }
+  .acordeon .contenido {
+    font-size: 1.4rem;
+    padding: 0 0.5rem;
+  }
   .footer {
     font-size: 1.2rem;
   }
@@ -1262,7 +1297,7 @@ form label {
   }
   .acordeon .contenido {
     padding: 0 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   /*FIN EL COLEGIO*/
   /*ACTIVIDADES*/
