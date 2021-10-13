@@ -29,6 +29,17 @@
             margin: 0px 20%;
         }
     }
+
+    .imatorio, .patioJoven {
+            .imatorioDiv, .patioDiv {
+                h3 {
+                    font-size: 3.5rem;
+                }
+                p {
+                   font-size: 2rem;
+                }
+            }
+    }
 }
 @media (max-width: 970px) {
     
@@ -131,6 +142,32 @@
                     }
             }
     }
+
+    .imatorio, .patioJoven {
+            .imatorioDiv, .patioDiv {
+                h3 {
+                    font-size: 3.5rem;
+                    margin: 0rem 0rem 0rem 0rem;
+                    padding: 2rem;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 2rem;
+                    padding: 0rem 2rem 2rem 2rem;
+                    text-align: justify;
+                }
+            }
+            .imagenesImatorio, .imagenesPatio {
+                flex-direction: column;
+                align-items: center;    
+                img {
+                    width: 90%;
+                    padding-bottom: 3%;
+    
+                }
+            }
+    
+    }
     
 }
 @media (max-width: 665px) {
@@ -197,18 +234,31 @@
     }
     /*FIN EL COLEGIO*/
     /*ACTIVIDADES*/
-    .imgImaDiv {
-        display: none;
-    }
-    .imgPatioDiv {
-        display: none;
-    }
-    .imatorio p, .patioJoven p {
-        font-size: 1.4rem;
-    }
-    .imatorioDiv, .patioDiv {
-        width: 70%;
-    }
+    .imatorio, .patioJoven {
+        .imatorioDiv, .patioDiv {
+            h3 {
+                font-size: 3rem;
+                margin: 0rem 0rem 0rem 0rem;
+                padding: 2rem;
+                font-weight: bold;
+            }
+            p {
+                font-size: 1.8rem;
+                padding: 0rem 2rem 2rem 2rem;
+                text-align: justify;
+            }
+        }
+        .imagenesImatorio, .imagenesPatio {
+            flex-direction: column;
+            align-items: center;    
+            img {
+                width: 90%;
+                padding-bottom: 3%;
+
+            }
+        }
+
+}
     /*FIN ACTIVIDADES*/
 
     /*GALERÍA*/
@@ -340,6 +390,16 @@
         }
     }
 
+    .imatorio, .patioJoven {
+        .imatorioDiv, .patioDiv {
+            h3 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.7rem;
+            }
+        }
+    }
 }
 @media (max-width: 460px) {
     .encabezadoGeneral {
@@ -380,6 +440,19 @@
                 }
         }
     }
+
+    .imatorio, .patioJoven {
+        width: 90%;
+        .imatorioDiv, .patioDiv {
+            h3 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
 }
 @media (max-width:400px) {
     #headerHome {height: 35vh;}
@@ -438,8 +511,6 @@
         }
     }
     
-
-    
     /*FIN HOME*/
 
     /*EL COLEGIO*/
@@ -459,7 +530,6 @@
         }
     }
    
-    
     .acordeon {
         width: 90%;
             .contenido {
@@ -471,7 +541,6 @@
     /*FIN EL COLEGIO*/
     /*ACTIVIDADES*/
     /*FIN ACTIVIDADES*/
-
     /*GALERÍA*/
     .fotosGaleria {
         padding: 5px 40px;
@@ -488,7 +557,6 @@
         height: auto;
     }
     /*FIN GALERÍA*/
-
     /*CONTACTO*/
     /*FIN CONTACTO*/
 }

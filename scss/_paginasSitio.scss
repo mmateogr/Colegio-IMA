@@ -123,7 +123,7 @@ h2 a {
     background-color: #B9B8FF;
     color: #00006A;
     font-weight: 300;
-    width: 90%;
+    width: 80%;
     font-size: 2.5rem;
     padding: 2rem;
     border-radius: 2rem;
@@ -186,7 +186,6 @@ h2 a {
 }
 .acordeon {
     width: 80%;
-    max-width: 120rem;
 }
 .acordeon .bloque{
     background-color: #B9B8FF;
@@ -232,76 +231,50 @@ h2 a {
 
 /* -----------------------------------------FIN EL COLEGIO-------------------------------------------- */
 /* -----------------------------------------COMIENZO ACTIVIDADES-------------------------------------- */
+.contenidoActividades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10rem;
+    
+}
 .imatorio, .patioJoven {
     display: flex;
-    justify-content: center;
-}
-.patioJoven {
-    margin-bottom: 8rem;
-}
-.imatorio h3, .patioJoven h3 {
-    font-size: 4rem;
-    justify-content: center;
-    padding-bottom: 2rem;
-}
-.imatorio p, .patioJoven p {
-    font-size: 2rem;
+    flex-direction: column;
+    width: 80%;
+    background-color: #B9B8FF;
+    margin: 0 0 1rem 0;
+    border-radius: 15px;
+    color: #00006A;
+    margin-bottom: 10rem;
+        .imatorioDiv, .patioDiv {
+            h3 {
+                font-size: 4.5rem;
+                margin: 0rem 0rem 0rem 0rem;
+                padding: 2rem;
+                font-weight: bold;
+            }
+            p {
+                font-size: 2.5rem;
+                padding: 0rem 2rem 2rem 2rem;
+                text-align: justify;
+            }
+        }
+        .imagenesImatorio, .imagenesPatio {
+            display: flex;
+            justify-content: space-around;
+            margin: 3% 0;
+
+            img {
+                width: 30%;
+
+            }
+        }
+
 }
 
-.imatorioDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    text-align: justify;
-    margin: 8rem 0rem 0rem 0rem;
-    transition: all 2s;
-}
-.patioDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    text-align: justify;
-    margin: 8rem 0rem 0rem 0rem;
-}
-/*
-.imgImaDiv, .imgPatioDiv {
-    display: flex;
-    flex-direction: column;
-}
-.imgImaDiv {
-    height: 65rem;
-}
-.imatorio img, .patioJoven img {
-    height: 24rem;
-}
-.protocolo {
-    width: 24rem;
-    position: relative;
-    right: 9rem;
-}
-.animadores {
-    width: 27rem;
-    position: relative;
-    bottom: 9rem;
-    left: 13rem;
-}
-.jugando {
-    position: relative;
-    bottom: 7rem;
-    left: 12rem;
-}
-.hockey {
-    position: relative;
-    bottom: 11rem;
-    left: 3rem;
-}
-.patio {
-    position: relative;
-    bottom: 4rem;
-}
-*/
+
 .actividades {
     font-family: 'Reenie Beanie', cursive;
     font-weight: 300;
