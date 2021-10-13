@@ -283,8 +283,14 @@ footer .divLogoFooter {
 h2 a {
   color: #0300FF;
   text-decoration: none;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  border-radius: 15px;
+}
+
+h2 a:hover {
+  -webkit-animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both;
 }
 
 .titulosHome {
@@ -610,6 +616,15 @@ h2 a {
 
 .imatorio .imagenesImatorio img, .imatorio .imagenesPatio img, .patioJoven .imagenesImatorio img, .patioJoven .imagenesPatio img {
   width: 30%;
+  border-radius: 15px;
+}
+
+.imatorio .imagenesImatorio img:hover, .imatorio .imagenesPatio img:hover, .patioJoven .imagenesImatorio img:hover, .patioJoven .imagenesPatio img:hover {
+  filter: brightness(113%);
+  -webkit-filter: brightness(113%);
+  -moz-filter: brightness(113%);
+  -webkit-transition: all .10s ease-in-out;
+  transition: all .10s ease-in-out;
 }
 
 .actividades {

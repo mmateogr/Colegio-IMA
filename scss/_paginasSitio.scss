@@ -13,7 +13,13 @@
 h2 a {
     color: #0300FF;
     text-decoration: none;
-    transition: all 0.4s;
+    transition: all 0.1s;
+    border-radius: 15px;
+}
+
+h2 a:hover {
+    -webkit-animation: bounce-top 0.9s both;
+    animation: bounce-top 0.9s both;
 }
 
 
@@ -268,6 +274,13 @@ h2 a {
 
             img {
                 width: 30%;
+                border-radius: 15px;
+            }
+            img:hover {
+                filter: brightness(113%);
+                -webkit-filter: brightness(113%);
+                -moz-filter: brightness(113%);
+                transition:all .10s ease-in-out;
 
             }
         }
