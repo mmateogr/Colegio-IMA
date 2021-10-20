@@ -41,6 +41,16 @@
             }
     }
 }
+@media (max-width: 1003px) {
+    .ubicacionColegio {
+        .aclaracionesUbicacion {
+            p {
+                font-size: 1.9rem;
+            }
+        }
+    }
+}
+
 @media (max-width: 970px) {
     
     .encabezadoGeneral {
@@ -63,6 +73,33 @@
     }
     .cardsHome {
         height: 135vh;
+    }
+
+    .aclaracionesUbicacion {
+        
+            p { 
+                font-size: 1.7rem;
+            }
+    }
+}
+@media(max-width: 900px) {
+    .contenedorContacto {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10rem;
+    }
+
+    .ubicacionColegio {
+        margin-right: 0;
+        width: 70%;
+        margin-bottom: 10rem;
+        height: 100%;
+    }
+    .aclaracionesUbicacion {
+            
+    }
+    .formulario {
+        width: 70%;
     }
 }
 @media (max-width: 800px) {
@@ -170,12 +207,40 @@
     }
     
 }
+@media (max-width: 675px) {
+
+    .ubicacionColegio {
+        .aclaracionesUbicacion {
+            padding-bottom: 0rem;
+            p {
+                font-size: 1.7rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+
 @media (max-width: 665px) {
     .footer {
         .footer__div {
             margin: 0px 10%;
         }
-    }  
+    }
+    .ubicacionColegio {
+        width: 85%;
+        .aclaracionesUbicacion {
+            padding-bottom: 0rem;
+            p {
+                font-size: 2rem;
+                padding-right: 1rem;
+                height: 100%;
+            }
+        }
+    }
+    
+    .formulario {
+        width: 70%;
+    }
 }
 @media (max-width: 635px) {
     .cardsHome {
@@ -277,26 +342,19 @@
     }
     /*FIN GALERÍA*/
     /*CONTACTO*/
-    .ubicacionColegio {
-        flex-direction: column;
-        align-items: center;
-            iframe {
-                height: 400px;
-                width: 80%;
-                padding-bottom: 0;
-                margin-bottom: 0;
-            }
-            .aclaracionesUbicacion{
-                margin-top: 0;
-                width: 80%;
-                height: 100%;
-                padding-bottom: 3rem;
-                margin-bottom: 8rem;
-            }
-    }
+   
     /*FIN CONTACTO*/
 }
 @media (max-width: 571px) {
+
+    .ubicacionColegio {
+        .aclaracionesUbicacion {
+            p {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
     .footer {
         .footer__div {
             margin: 0px 5%;
@@ -415,6 +473,13 @@
     .icono-menu img {
         width: 30px;
     }
+    .ubicacionColegio {
+        .aclaracionesUbicacion {
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
 }
 @media (max-width: 420px) {
     .cardsResponsive {
@@ -449,6 +514,14 @@
             }
             p {
                 font-size: 1.6rem;
+            }
+        }
+    }
+
+    .ubicacionColegio {
+        .aclaracionesUbicacion {
+            p {
+                font-size: 1.5rem;
             }
         }
     }

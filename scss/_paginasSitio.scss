@@ -15,14 +15,12 @@ h2 a {
     text-decoration: none;
     transition: all 0.1s;
 }
-
 .titulosHome {
     text-align: center;
     margin: 5rem;
     margin-top: 10rem;
     font-size: 4rem;
 }
-
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .cardsHome {
     margin: 0;
@@ -68,7 +66,6 @@ h2 a {
     box-sizing: border-box;
     padding: 20px;
 }
-
 .novedad1Titulo, .novedad2Titulo, .novedad3Titulo {
     font-size: 3rem;
     background-color: #00006A;
@@ -78,31 +75,25 @@ h2 a {
     padding: 0 0 1rem 0;
     text-align: left;
 }
-
 .cSharp {
     background-color: #00006A;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .face2 {
     transition: 0.5s;
 }
-
 .card:hover .face.face2 {
     height: 60px;
 }
-
 .card:nth-child(1) .face.face2 {
     background-image: url(../imagenes/db1.jpg);
     border-radius: 15px;
 }
-
 .card:nth-child(2) .face.face2 {
     background-image: url(../imagenes/wall-e1.jpg);
     border-radius: 15px;
 }
-
 .card:nth-child(3) .face.face2 {
     background-image: url(../imagenes/hockey1.jpg);
     border-radius: 15px;
@@ -141,12 +132,11 @@ h2 a {
             margin: 0rem 30px 10rem 30px;
         }
         img:hover {
-            background: #040152;
+            background: #09027F;
             -webkit-box-shadow: 8px 8px 16px #000013, -8px -8px 16px #02004d;
             box-shadow: 8px 8px 16px #000013, -8px -8px 16px #02004d;
         }
 }
-
 
 /*Imagenes redes-----------------------*/
 /* -----------------------------------------FIN PÁGINA PPAL------------------------------------------- */
@@ -161,6 +151,9 @@ h2 a {
             background-color: #B9B8FF;
             border-radius: 2rem;
             color: #00006A;
+            -webkit-box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+            box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;  
+
                 h3 {
                     font-size: 3.5rem;
                     margin: 0rem 0rem 0rem 0rem;
@@ -184,21 +177,28 @@ h2 a {
 }
 .acordeon {
     width: 80%;
+        .bloque {
+            background-color: #B9B8FF;
+            margin: 0 0 1rem;
+            padding: 1rem;
+            border-radius: 15px;
+            -webkit-box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+            box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+        }
 }
-.acordeon .bloque{
-    background-color: #B9B8FF;
-    margin: 0 0 1rem;
-    padding: 1rem;
-    border-radius: 15px;
-}
+
 .tituloAcordeon {
-    background-color: #040152;
+    background-color: #010030;
     margin: 0 0 1rem;
     padding: 1rem;
     border-radius: 15px;
     font-size: 3rem;
     display: flex;
     justify-content: space-between;
+}
+.tituloAcordeon:hover {
+    background-color: #09027F;
+
 }
 .acordeon .h4{
     width: 100%;
@@ -235,7 +235,6 @@ h2 a {
     align-items: center;
     width: 100%;
     margin-top: 10rem;
-    
 }
 .imatorio, .patioJoven {
     display: flex;
@@ -246,6 +245,8 @@ h2 a {
     border-radius: 15px;
     color: #00006A;
     margin-bottom: 10rem;
+    -webkit-box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+    box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d; 
         .imatorioDiv, .patioDiv {
             h3 {
                 font-size: 4.5rem;
@@ -263,7 +264,6 @@ h2 a {
             display: flex;
             justify-content: space-around;
             margin: 3% 0;
-
             img {
                 width: 30%;
                 border-radius: 15px;
@@ -273,13 +273,9 @@ h2 a {
                 -webkit-filter: brightness(113%);
                 -moz-filter: brightness(113%);
                 transition:all .10s ease-in-out;
-
             }
         }
-
 }
-
-
 .actividades {
     font-family: 'Reenie Beanie', cursive;
     font-weight: 300;
@@ -301,7 +297,13 @@ h2 a {
                      
     margin-bottom: 10rem;
 }
-.fotosGaleria img { width: 100%;}
+.fotosGaleria img {
+    width: 100%;
+    -webkit-box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+    box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+    border-radius: 15px;
+    
+}
 .fotoUno {
     grid-area: uno;
 }
@@ -322,11 +324,62 @@ h2 a {
 
 /*---------------------------- FIN PÁGINA GALERÍA------------------------------------------*/
 /*----------------------------INICIO PÁGINA CONTACTO------------------------------------------*/
-.consulta {font-size: 2.5rem; text-align: center; margin-bottom: 2rem;}
+.contenedorContacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+
+}
+/*Mapa colegio-------------------------*/
+.ubicacionColegio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 3%;
+    width: 47%;
+        iframe {
+            height: 40rem;
+            border-radius: 15px 15px 0 0;
+            width: 100%;
+        }
+        .aclaracionesUbicacion {
+            display: flex;
+            background-color: #B9B8FF;
+            height: 15rem;
+            width: 100%;
+            color: #00006A;
+            border-radius: 0 0 15px 15px;
+            justify-content: center;
+            -webkit-box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+            box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+            border-top: 5px solid #00006A;
+                p {
+                    width: 33%;
+                    font-size: 2rem;
+                    padding: 0.5rem 1rem 0.5rem 1rem;
+                }
+                .conBarra {
+                    border-right: 1px solid #010030 ;
+                }
+        
+        }
+}
+
+
+/*Mapa colegio-------------------------*/
 /*Formulario contacto------------------*/
 .formulario {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+        .consulta {
+        font-size: 3rem;
+        max-width: 52rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        }
 }
 .formularioContacto {
     display: flex;
@@ -334,56 +387,72 @@ h2 a {
     align-items: center;
     width: 300px;
 }
-form input {
-    width: 300px;
-}
-.cajaFormulario {
-    margin: 0.5rem 0rem;
-}
-.motivo {margin-bottom: 1rem}
+
 .mensaje textarea {
     width: 300px;
+    font-family: 'Roboto', sans-serif;
 }
-form label {
-    font-size: 1.5rem;
-}
+
 .botonesContacto {
     display: flex;
-    width: 90px;
     justify-content: center;
+        input {
+            margin: 2rem 1rem;
+            width: 10rem;
+            height: 4rem;
+            background-color: #B9B8FF;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            border-radius: 5px;
+            border: none;
+            -webkit-box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+            box-shadow: 8px 8px 16px #010023, -8px -8px 16px #01003d;
+        }
+        input:hover {
+            background-color: #9694ff;
+            cursor: pointer;
+        }
 }
-.botonesContacto input {
-    margin: 2rem 1rem;
+
+.cajaFormulario {
+    margin: 0.5rem 0rem;
+        label {
+            font-size: 1.5rem;
+        }
+        input {
+            background-color: #E1E0FF;
+            margin-top: 0.5rem;
+            border-radius: 5px;
+            width: 300px;
+            font-size: 1.5rem;
+            border: none;
+            height: 2.5rem;
+            padding-left: 0.5rem;
+        }
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+textarea {
+    border-radius: 5px;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: #E1E0FF;
+
+}
+::placeholder {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.mensaje {
+    margin-top: 1.5rem;
 }
 
 /*Formulario contacto------------------*/
-.ubicacion {border: none;}
-/*Mapa colegio-------------------------*/
-.ubicacionColegio {
-    display: flex;
-    justify-content: center;
-}
-.ubicacionColegio iframe {
-    margin-bottom: 10rem;
-    height: 50rem;
-}
-.ubicacion {
-    margin-bottom: 4rem;
-    padding: 0rem;
-}
-.aclaracionesUbicacion {
-    display: flex;
-    flex-direction: column;
-    background-color: #B9B8FF;
-    height: 50rem;
-    width: 30rem;
-    color: #00006A;
-}
-.aclaracionesUbicacion p {
-    font-size: 2rem;
-    margin-left: 1.5rem;
-    margin-top: 1rem;
-}
-/*Mapa colegio-------------------------*/
+
 /*---------------------------- FIN PÁGINA CONTACTO------------------------------------------*/
 

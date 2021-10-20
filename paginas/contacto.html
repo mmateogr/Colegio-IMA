@@ -44,58 +44,58 @@
     <div id="headerContacto"></div>
 
     <h2>CONTACTO</h2>
-    <p class="consulta">Envianos tu consulta, nos contactaremos a la brevedad</p>
-    <section class="formulario">
-        <form class="formularioContacto">
-            <div class="cajaFormulario">
-                <label for="nombre">Nombre:</label>
-                <input required type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+    
+
+    <div class="contenedorContacto">
+
+        <section class="ubicacionColegio">
+            
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20732.368053046546!2d-58.51905050471183!3d-34.482502792440684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb034e3686711%3A0x90d8a704d11c1840!2sInstituto%20Mar%C3%ADa%20Auxiliadora!5e0!3m2!1ses!2sar!4v1629658777583!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <div class="aclaracionesUbicacion">
+                <p class="conBarra"> <strong>Dirección:</strong> Martín y Omar 287 - San isidro. (Puerta principal)</p>
+                <p class="conBarra">Entre las calles <strong>Acasusso y Rivadavia</strong>.</p>
+                <p>A 2 cuadras de la <strong>estación de San Isidro</strong> y a 3 cuadras de la <strong>Av. Centenario</strong>.</p>
             </div>
-            <div class="cajaFormulario">
-                <label for="apellido">Apellido:</label>
-                <input required type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido">
-            </div>
-            <div class="cajaFormulario">
-                <label for="email">Email:</label>
-                <input required type="email" name="email" id="email" placeholder="Escribe tu email">
-            </div>
-            <div class="cajaFormulario">
-                <label for="telefono">Teléfono:</label>
-                <input required type="number" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
-            </div>
-            <div class="motivo">
-                <label for="motivo">Motivo:</label>
-                <select required name="motivo" id="motivo">
-                    <option selected disabled value="default">Seleccione</option>
-                    <option value="consulta">Consulta</option>
-                    <option value="inscripción">Inscripción</option>
-                    <option value="reunion">Reunión</option>
-                </select>
-            </div>
-            <div class="mensaje">
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="150"
-                placeholder="Escriba aquí"></textarea>
-            </div>
-            <div class="botonesContacto">
-                <input type="reset" value="Limpiar">
-                <input type="submit">
-            </div>
-        </form>
-    </section>
-    <h2 class="ubicacion">UBICACIÓN</h2>
-    <section class="ubicacionColegio">
+            
+        </section>
+
+        <section class="formulario">
+            <p class="consulta">Envianos tu consulta, nos contactaremos a la brevedad</p>
+            <form class="formularioContacto">
+                <div class="cajaFormulario">
+                    <label for="nombre">Nombre:</label>
+                    <input required type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" maxlength="30">
+                </div>
+                <div class="cajaFormulario">
+                    <label for="apellido">Apellido:</label>
+                    <input required type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido" maxlength="45">
+                </div>
+                <div class="cajaFormulario">
+                    <label for="email">Email:</label>
+                    <input required type="email" name="email" id="email" placeholder="Escribe tu email" maxlength="45">
+                </div>
+                <div class="cajaFormulario">
+                    <label for="telefono">Teléfono/celular:</label>
+                    <input required type="number" name="telefono" id="telefono" placeholder="Escribe tu teléfono" min="0" minlength="4" maxlength="30">
+                </div>
+                
+                <div class="mensaje">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="7" maxlength="250"
+                    placeholder="Escriba su consulta aquí"></textarea>
+                </div>
+                <div class="botonesContacto">
+                    <input type="submit">
+                    <input type="reset" value="Limpiar">
+                    
+                </div>
+            </form>
+        </section>
         
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20732.368053046546!2d-58.51905050471183!3d-34.482502792440684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb034e3686711%3A0x90d8a704d11c1840!2sInstituto%20Mar%C3%ADa%20Auxiliadora!5e0!3m2!1ses!2sar!4v1629658777583!5m2!1ses!2sar"
-            style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-        <div class="aclaracionesUbicacion">
-            <p>Dirección: Martín y Omar 287 - San isidro.</p>
-            <p>Entre las calles Acasusso y Rivadavia.</p>
-            <p>A 2 cuadras de la estación de San Isidro y 3 cuadras de la Avenida Centenario.</p>
-        </div>
         
-    </section>
+    </div>
 
     <footer class="footer">
         <div class="divLogoFooter">
