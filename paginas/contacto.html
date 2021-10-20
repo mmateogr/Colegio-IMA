@@ -9,6 +9,7 @@
     <meta name="description" content="Contactanos para resolver tus consultas y saber más del colegio.">
     <meta name="keywords" content="CONTACTO, CONSULTA, INSCRIPCIÓN, UBICACIÓN, MAPA">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="arregloMenu">
+        <div class="arregloMenu" data-aos="fade-left">
             <a class="tituloSitio" href="../index.html"><h1>Instituto María Auxiliadora</h1></a>        
             <a class="linkLogo" href="../index.html"><img class="logoIma" src="../imagenes/logo.png" alt="logo IMA"></a>
         </div>
@@ -50,7 +51,7 @@
 
         <section class="ubicacionColegio">
             
-            <iframe
+            <iframe data-aos="fade-up"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20732.368053046546!2d-58.51905050471183!3d-34.482502792440684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb034e3686711%3A0x90d8a704d11c1840!2sInstituto%20Mar%C3%ADa%20Auxiliadora!5e0!3m2!1ses!2sar!4v1629658777583!5m2!1ses!2sar"
                 style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
@@ -113,7 +114,10 @@
     </footer>
     <p class="footer__autor">Sitio desarrollado por <a href="https://github.com/mmateogr?tab=repositories" target="_blank">mmateogr</a><p>
     <script src="../javasc/app.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

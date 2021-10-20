@@ -9,6 +9,7 @@
     <meta name="description" content="Galería de fotos de los espacios del colegio.">
     <meta name="keywords" content="GALERÍA, FOTOS, IMÁGENES, PATIO, AULA, COLEGIO, EDIFICIO">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="arregloMenu">
+        <div class="arregloMenu" data-aos="fade-left">
             <a class="tituloSitio" href="../index.html"><h1>Instituto María Auxiliadora</h1></a>        
             <a class="linkLogo" href="../index.html"><img class="logoIma" src="../imagenes/logo.png" alt="logo IMA"></a>
         </div>
@@ -46,11 +47,11 @@
     <h2>GALERÍA</h2>
 
     <section class="fotosGaleria">
-        <img class="fotoUno" src="../imagenes/ima_myo.jpg" alt="exterior colegio">
-        <img class="fotoDos" src="../imagenes/ima_jardin.jpg" alt="exterior colegio">
-        <img class="fotoTres" src="../imagenes/ima_reunion.jpg" alt="reunion patio">
-        <img class="fotoCuatro" src="../imagenes/ima_secundario.jpg" alt="clase">
-        <img class="fotoCinco" src="../imagenes/protocoloGaleria.jpg" alt="profes jardin">
+        <img data-aos="fade-right" class="fotoUno" src="../imagenes/ima_myo.jpg" alt="exterior colegio">
+        <img data-aos="fade-left" class="fotoDos" src="../imagenes/ima_jardin.jpg" alt="exterior colegio">
+        <img data-aos="fade-up" class="fotoTres" src="../imagenes/ima_reunion.jpg" alt="reunion patio">
+        <img data-aos="fade-right" class="fotoCuatro" src="../imagenes/ima_secundario.jpg" alt="clase">
+        <img data-aos="fade-left" class="fotoCinco" src="../imagenes/protocoloGaleria.jpg" alt="profes jardin">
     </section>
 
     <footer class="footer">
@@ -69,7 +70,10 @@
     </footer>
     <p class="footer__autor">Sitio desarrollado por <a href="https://github.com/mmateogr?tab=repositories" target="_blank">mmateogr</a><p>
     <script src="../javasc/app.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

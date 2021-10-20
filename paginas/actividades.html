@@ -9,6 +9,7 @@
     <meta name="description" content="Propuestas para todos nuestros alumnos que quieran ser parte de espacios extracurriculares.">
     <meta name="keywords" content="ACTIVIDADES, ESPACIOS, JOVENES, PATIO, ORATORIO, JUEGOS, TIEMPO LIBRE">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -35,17 +36,17 @@
                 </li>
             </ul>
         </nav>
-        <div class="arregloMenu">
+        <div class="arregloMenu" data-aos="fade-left">
             <a class="tituloSitio" href="../index.html"><h1>Instituto María Auxiliadora</h1></a>        
             <a class="linkLogo" href="../index.html"><img class="logoIma" src="../imagenes/logo.png" alt="logo IMA"></a>
         </div>
     </header>
 
     <div id="headerActividades"></div>
-    
+
     <h2>ACTIVIDADES</h2>
     <section class="contenidoActividades">
-        <article class="imatorio">
+        <article class="imatorio" data-aos="fade-up-right">
             <div class="imatorioDiv">
                 <h3 class="actividades">IMATORIO</h3>
                 <p>
@@ -53,13 +54,13 @@
                 </p>
             </div>
             <div class="imagenesImatorio">
-                <img src="../imagenes/inflables.jpg" alt="inflables">
-                <img src="../imagenes/jugando_1.jpg" alt="jugando">
-                <img src="../imagenes/hockey_1.jpg" alt="hockey">
+                <img data-aos="zoom-in" src="../imagenes/inflables.jpg" alt="inflables">
+                <img data-aos="zoom-in" src="../imagenes/jugando_1.jpg" alt="jugando">
+                <img data-aos="zoom-in" src="../imagenes/hockey_1.jpg" alt="hockey">
             </div>
         </article>
     
-        <article class="patioJoven">
+        <article class="patioJoven" data-aos="fade-up-left">
 
             <div class="patioDiv">
                 <h3 class="actividades">PATIO JOVEN</h3>
@@ -68,9 +69,9 @@
                 </p>
             </div>
             <div class="imagenesPatio">
-                <img src="../imagenes/patioJoven.jpg" alt="patio">
-                <img src="../imagenes/patio_1.jpg" alt="animadores">
-                <img src="../imagenes/animadores.jpg" alt="patio">
+                <img data-aos="zoom-in" src="../imagenes/patioJoven.jpg" alt="patio">
+                <img data-aos="zoom-in" src="../imagenes/patio_1.jpg" alt="animadores">
+                <img data-aos="zoom-in" src="../imagenes/animadores.jpg" alt="patio">
             </div>
         </article>
 
@@ -92,7 +93,10 @@
     <p class="footer__autor">Sitio desarrollado por <a href="https://github.com/mmateogr?tab=repositories" target="_blank">mmateogr</a><p>
     
     <script src="../javasc/app.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

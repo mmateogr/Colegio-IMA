@@ -9,6 +9,7 @@
     <meta name="description" content="El Instituto María Auxiliadora está ubicado en el corazón de San Isidro y fue fundado en 1891 por jóvenes religiosas Hijas de María Auxiliadora. En la actualidad cuenta con más de 1300 alumnos y ofrece a los jóvenes una enseñanza basada en los principios fundamentales de la obra de Don Bosco. Cuenta con Nivel Inicial, Nivel Primario y Nivel Secundario, con orientaciones en Cs. Sociales y Cs. Naturales.">
     <meta name="keywords" content="COLEGIO, HISTORIA, NIVEL INICIAL, NIVEL PRIMARIO, NIVEL SECUNDARIO, EDUCACIÓN">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="arregloMenu">
+        <div class="arregloMenu" data-aos="fade-left">
         <a class="tituloSitio" href="../index.html"><h1>Instituto María Auxiliadora</h1></a>        
         <a class="linkLogo" href="../index.html"><img class="logoIma" src="../imagenes/logo.png" alt="logo IMA"></a>
         </div>
@@ -45,7 +46,7 @@
 
     <h2>EL COLEGIO</h2>
     <section class="colegioInfo">
-        <article class="introInfo">
+        <article class="introInfo" data-aos="fade-up">
             <h3> Instituto María Auxiliadora</h3>
             <p class="parrafoColegio">El Instituto María Auxiliadora está <strong>ubicado en el corazón de San Isidro y fue fundado en 1891 por jóvenes
                 religiosas Hijas de María Auxiliadora</strong>. En la actualidad cuenta con más de 1300 alumnos y ofrece a los
@@ -56,7 +57,7 @@
     </section>
     <section class="contenedorColegio">
         <div class="acordeon">
-            <article class="bloque">
+            <article class="bloque" data-aos="fade-right">
                 <div class="tituloAcordeon">
                     <h4 class="h4">Nivel Inicial</h4>
                     <p class="mas">+</p>
@@ -83,7 +84,7 @@
                     </ul>
                 </div>
             </article>
-            <article class="bloque">
+            <article class="bloque" data-aos="fade-left">
                 <div class="tituloAcordeon">
                     <h4 class="h4">Nivel Primario</h4>
                     <p class="mas">+</p>
@@ -103,7 +104,7 @@
                         </ul>
                     </div>
             </article>
-            <article class="bloque">
+            <article class="bloque" data-aos="fade-right">
                 <div class="tituloAcordeon">
                     <h4 class="h4">Nivel Secundario</h4>
                     <p class="mas">+</p>
@@ -141,6 +142,10 @@
     </footer>
     <p class="footer__autor">Sitio desarrollado por <a href="https://github.com/mmateogr?tab=repositories" target="_blank">mmateogr</a><p>
     <script src="../javasc/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

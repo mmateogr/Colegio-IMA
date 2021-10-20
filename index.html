@@ -9,6 +9,7 @@
   <meta name="description" content="El Instituto María Auxiliadora tiene por objetivo formar jóvenes felices inculcando los valores cristianos y humanos. Esto lo hacemos propiciando, en cada uno de ellos, el desarrollo de sus capacidades y habilidades en un clima de familia caracterizado por el diálogo, el compromiso y la responsabilidad.">
   <meta name="keywords" content="COLEGIO, INSTITUTO, MARÍA AUXILIADORA, NOVEDADES, EDUCACIÓN, REDES, INSCRIPCIÓN">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -36,7 +37,7 @@
             </li>
         </ul>
       </nav>
-      <div class="arregloMenu">
+      <div class="arregloMenu" data-aos="fade-left">
         <a class="tituloSitio" href="index.html"><h1>Instituto María Auxiliadora</h1></a>
         <a class="linkLogo" href="index.html"><img class="logoIma" src="imagenes/logo.png" alt="logo IMA"></a>
       </div>
@@ -48,7 +49,7 @@
     <h2 class="inscripciones">INSCRIPCIONES AL CICLO LECTIVO 2022 <a class="shake-horizontal" href="/imagenes/fichaInicial.docx">AQUÍ</a></h2>
   </div>
 
-  <section class="parrafoDiv">
+  <section class="parrafoDiv" data-aos="fade-up">
     <p class="parrafoHome">
       El <strong>Instituto María Auxiliadora de San Isidro</strong> es casa porque en ella se vive el espíritu de familia; casa en la que se hace experiencia de un modo evangélico de vivir. Es un espacio de relaciones donde se ayuda a los jóvenes a <strong>encontrar el sentido de la existencia y la apertura a la dimensión vocacional</strong>; casa que impulsa a los alumnos a testimoniar, en la sociedad, la fuerza transformadora de la fe. Finalmente, es casa porque como <strong>educadores salesianos</strong>, entre los jóvenes, nos encontramos bien.
     </p>
@@ -59,7 +60,7 @@
   <section class="cardsHome">
     <div class="containerCards">
 
-      <div class="card">
+      <div class="card" data-aos="flip-left">
         <div class="face face1">
           <div class="content">
             <span class="stars"></span>
@@ -72,7 +73,7 @@
         <div class="face face2"></div>
       </div>
     
-      <div class="card">
+      <div class="card" data-aos="flip-left">
         <div class="face face1">
           <div class="content">
             <span class="stars"></span>
@@ -84,7 +85,7 @@
         <div class="face face2"></div>
       </div>
     
-      <div class="card">
+      <div class="card" data-aos="flip-left">
         <div class="face face1">
           <div class="content">
             <span class="stars"></span>
@@ -130,7 +131,7 @@
 <!-------------------------------------------------------------------------------------------------------->
   <section class="redes">
     <h3 class="titulosHome">Conocé más sobre nosotros</h3>
-    <div class="imagenesRedes">
+    <div class="imagenesRedes" data-aos="fade-up">
       <a href="https://api.whatsapp.com/send/?phone=5491171610043&text&app_absent=0" target="_blank"><img class="redesWp" src="imagenes/whatsapp-logo-240.png" alt="logo whatsapp"></a>
       <a href="https://www.instagram.com/imasanisidro/" target="_blank"><img class="redesIg" src="imagenes/instagram-logo-240.png" alt="logo instagram"></a>
       <a href="https://www.youtube.com/channel/UCLFLW-_ZlDWSl8vwgkQTNjw" target="_blank"><img class="redesYt" src="imagenes/youtube-logo-240.png" alt="logo youtube"></a>
@@ -156,6 +157,10 @@
   <p class="footer__autor">Sitio desarrollado por <a href="https://github.com/mmateogr?tab=repositories" target="_blank">mmateogr</a><p></p>
 
   <script src="javasc/app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
