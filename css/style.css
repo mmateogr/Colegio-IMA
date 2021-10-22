@@ -497,6 +497,7 @@ h2 a {
   width: 100%;
   margin-top: 10rem;
   margin-bottom: 10rem;
+  overflow-x: hidden;
 }
 
 .acordeon {
@@ -576,6 +577,7 @@ h2 a {
           align-items: center;
   width: 100%;
   margin-top: 10rem;
+  overflow-x: hidden;
 }
 
 .imatorio, .patioJoven {
@@ -651,6 +653,7 @@ h2 a {
   -ms-grid-rows: repeat 3, 1fr;
       grid-template-rows: repeat 3, 1fr;
   margin-bottom: 10rem;
+  overflow-x: hidden;
 }
 
 .fotosGaleria img {
